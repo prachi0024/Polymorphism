@@ -1,0 +1,25 @@
+
+public class OverloadEx {
+	void demo(int a)
+	{
+		System.out.println("a: " +a);
+	}
+	void demo(int a , int b)
+	{
+		System.out.println("a: " +a+ "and b" +b);
+	}
+	double demo(double a)
+	{
+		System.out.println("double a: " +a);
+		return a*a;
+	}
+
+	public static void main(String[] args) {
+		OverloadEx obj = new OverloadEx();
+		obj.demo(1);
+		obj.demo(2,3);
+		obj.demo(30.43);
+
+	}
+
+}
