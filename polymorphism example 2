@@ -1,0 +1,22 @@
+class Baseclass
+{
+	public void display() {
+		System.out.println("I am the method of baseclass");
+	}
+}
+public class DerivedClass extends Baseclass{
+	public void display()
+	{
+		System.out.println("I am the method of derived class");
+	}
+
+
+	public static void main(String[] args) {
+		Baseclass obj1= new Baseclass();
+		Baseclass obj2= new DerivedClass();
+		obj1.display();
+		obj2.display();
+
+	}
+
+}
